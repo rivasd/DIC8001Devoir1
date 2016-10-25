@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Y9Di8JreEeaRx6PHREtA_g" name="Institution Financiere">
+  <packageImport xmi:id="_yO5_sJr0EeaRx6PHREtA_g">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_m6VWIJreEeaRx6PHREtA_g" name="Client">
+    <eAnnotations xmi:id="_m6a1sJreEeaRx6PHREtA_g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_Yau_YJrmEeaRx6PHREtA_g" key="Human"/>
+    </eAnnotations>
+    <generalization xmi:id="_dvjKIJr1EeaRx6PHREtA_g" general="_ndoD4JrzEeaRx6PHREtA_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_nejdgJreEeaRx6PHREtA_g" name="UseCase1" subject="_sRKEUJrzEeaRx6PHREtA_g"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_SJfcEJrsEeaRx6PHREtA_g" name="Package1"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_7Itj4JryEeaRx6PHREtA_g" name="Gestionnaire de compte">
+    <eAnnotations xmi:id="_7Itj4ZryEeaRx6PHREtA_g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_7IuK8JryEeaRx6PHREtA_g" key="Human"/>
+    </eAnnotations>
+    <generalization xmi:id="_etbHoJr1EeaRx6PHREtA_g" general="_ndoD4JrzEeaRx6PHREtA_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_MXdu4JrzEeaRx6PHREtA_g" name="Administrateur">
+    <eAnnotations xmi:id="_MXdu4ZrzEeaRx6PHREtA_g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_MXdu4przEeaRx6PHREtA_g" key="Human"/>
+    </eAnnotations>
+    <generalization xmi:id="_fc8gEJr1EeaRx6PHREtA_g" general="_ndoD4JrzEeaRx6PHREtA_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_ndoD4JrzEeaRx6PHREtA_g" name="Membre du système">
+    <eAnnotations xmi:id="_ndoq8JrzEeaRx6PHREtA_g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_ndoq8ZrzEeaRx6PHREtA_g" key="Human"/>
+    </eAnnotations>
+    <generalization xmi:id="_sA23IJr2EeaRx6PHREtA_g" general="_nOSgAJr2EeaRx6PHREtA_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_sRKEUJrzEeaRx6PHREtA_g" name="Class1" useCase="_nejdgJreEeaRx6PHREtA_g">
+    <ownedAttribute xmi:id="_vhaUIJrzEeaRx6PHREtA_g" name="sfdsd"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_NkI2AJr2EeaRx6PHREtA_g" name="Usager Anonyme">
+    <eAnnotations xmi:id="_NkJdEJr2EeaRx6PHREtA_g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_NkJdEZr2EeaRx6PHREtA_g" key="Human"/>
+    </eAnnotations>
+    <generalization xmi:id="_tF-FEJr2EeaRx6PHREtA_g" general="_nOSgAJr2EeaRx6PHREtA_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_nOSgAJr2EeaRx6PHREtA_g" name="Utilisateur">
+    <eAnnotations xmi:id="_nOSgAZr2EeaRx6PHREtA_g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_nOSgApr2EeaRx6PHREtA_g" key="Human"/>
+    </eAnnotations>
+  </packagedElement>
+</uml:Model>

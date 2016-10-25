@@ -9,7 +9,6 @@
     </eAnnotations>
     <generalization xmi:id="_dvjKIJr1EeaRx6PHREtA_g" general="_ndoD4JrzEeaRx6PHREtA_g"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_nejdgJreEeaRx6PHREtA_g" name="UseCase1" subject="_sRKEUJrzEeaRx6PHREtA_g"/>
   <packagedElement xmi:type="uml:Package" xmi:id="_SJfcEJrsEeaRx6PHREtA_g" name="Package1"/>
   <packagedElement xmi:type="uml:Actor" xmi:id="_7Itj4JryEeaRx6PHREtA_g" name="Gestionnaire de compte">
     <eAnnotations xmi:id="_7Itj4ZryEeaRx6PHREtA_g" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -29,7 +28,7 @@
     </eAnnotations>
     <generalization xmi:id="_sA23IJr2EeaRx6PHREtA_g" general="_nOSgAJr2EeaRx6PHREtA_g"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_sRKEUJrzEeaRx6PHREtA_g" name="Class1" useCase="_nejdgJreEeaRx6PHREtA_g">
+  <packagedElement xmi:type="uml:Class" xmi:id="_sRKEUJrzEeaRx6PHREtA_g" name="Class1">
     <ownedAttribute xmi:id="_vhaUIJrzEeaRx6PHREtA_g" name="sfdsd"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Actor" xmi:id="_NkI2AJr2EeaRx6PHREtA_g" name="Usager Anonyme">
@@ -42,5 +41,47 @@
     <eAnnotations xmi:id="_nOSgAZr2EeaRx6PHREtA_g" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <details xmi:id="_nOSgApr2EeaRx6PHREtA_g" key="Human"/>
     </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_r55MIJr5EeaRx6PHREtA_g" name="Authentication"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_ub3SQJr8EeaRx6PHREtA_g" name="Envoyer un message"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_DCOSQJr9EeaRx6PHREtA_g" name="Consulter ses messages"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_H1YF8JsCEeaRx6PHREtA_g" name="Consulter ses compte"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_VyeS8JsCEeaRx6PHREtA_g" name="Consulter ses factures"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_fv6zgJsCEeaRx6PHREtA_g" name="Payer une facture">
+    <extend xmi:id="_9NbaYJsCEeaRx6PHREtA_g" extendedCase="_VyeS8JsCEeaRx6PHREtA_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_iZrEAJsCEeaRx6PHREtA_g" name="Modifier une facture">
+    <extend xmi:id="_-k-cIJsCEeaRx6PHREtA_g" extendedCase="_VyeS8JsCEeaRx6PHREtA_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_pAuQgJsCEeaRx6PHREtA_g" name="Supprimer une facture">
+    <extend xmi:id="__FjZoJsCEeaRx6PHREtA_g" extendedCase="_VyeS8JsCEeaRx6PHREtA_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_3EOngJsCEeaRx6PHREtA_g" name="Effectuer un virement"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_DGgtoJsDEeaRx6PHREtA_g" memberEnd="_DGhUsJsDEeaRx6PHREtA_g _DGhUsZsDEeaRx6PHREtA_g">
+    <ownedEnd xmi:id="_DGhUsJsDEeaRx6PHREtA_g" type="_m6VWIJreEeaRx6PHREtA_g" association="_DGgtoJsDEeaRx6PHREtA_g"/>
+    <ownedEnd xmi:id="_DGhUsZsDEeaRx6PHREtA_g" type="_VyeS8JsCEeaRx6PHREtA_g" association="_DGgtoJsDEeaRx6PHREtA_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_I4xAIJsDEeaRx6PHREtA_g" memberEnd="_I4xnMJsDEeaRx6PHREtA_g _I4xnMZsDEeaRx6PHREtA_g">
+    <ownedEnd xmi:id="_I4xnMJsDEeaRx6PHREtA_g" type="_m6VWIJreEeaRx6PHREtA_g" association="_I4xAIJsDEeaRx6PHREtA_g"/>
+    <ownedEnd xmi:id="_I4xnMZsDEeaRx6PHREtA_g" type="_3EOngJsCEeaRx6PHREtA_g" association="_I4xAIJsDEeaRx6PHREtA_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_P8zqoJsDEeaRx6PHREtA_g" memberEnd="_P8zqoZsDEeaRx6PHREtA_g _P80RsJsDEeaRx6PHREtA_g">
+    <ownedEnd xmi:id="_P8zqoZsDEeaRx6PHREtA_g" type="_m6VWIJreEeaRx6PHREtA_g" association="_P8zqoJsDEeaRx6PHREtA_g"/>
+    <ownedEnd xmi:id="_P80RsJsDEeaRx6PHREtA_g" type="_H1YF8JsCEeaRx6PHREtA_g" association="_P8zqoJsDEeaRx6PHREtA_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_VpF4AJsDEeaRx6PHREtA_g" name="Demander un relevé">
+    <extend xmi:id="_XhztIJsDEeaRx6PHREtA_g" extendedCase="_H1YF8JsCEeaRx6PHREtA_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_zmECEJsDEeaRx6PHREtA_g" name="Voir les transactions post-datées">
+    <extend xmi:id="_-wpOsJsEEeaRx6PHREtA_g" extendedCase="_H1YF8JsCEeaRx6PHREtA_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_NpP3IJsEEeaRx6PHREtA_g" name="Créer son compte"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_QKUFsJsEEeaRx6PHREtA_g" memberEnd="_QKUFsZsEEeaRx6PHREtA_g _QKUswJsEEeaRx6PHREtA_g">
+    <ownedEnd xmi:id="_QKUFsZsEEeaRx6PHREtA_g" type="_NkI2AJr2EeaRx6PHREtA_g" association="_QKUFsJsEEeaRx6PHREtA_g"/>
+    <ownedEnd xmi:id="_QKUswJsEEeaRx6PHREtA_g" type="_NpP3IJsEEeaRx6PHREtA_g" association="_QKUFsJsEEeaRx6PHREtA_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Q6wrMJsEEeaRx6PHREtA_g" memberEnd="_Q6wrMZsEEeaRx6PHREtA_g _Q6zHcJsEEeaRx6PHREtA_g">
+    <ownedEnd xmi:id="_Q6wrMZsEEeaRx6PHREtA_g" type="_MXdu4JrzEeaRx6PHREtA_g" association="_Q6wrMJsEEeaRx6PHREtA_g"/>
+    <ownedEnd xmi:id="_Q6zHcJsEEeaRx6PHREtA_g" type="_NpP3IJsEEeaRx6PHREtA_g" association="_Q6wrMJsEEeaRx6PHREtA_g"/>
   </packagedElement>
 </uml:Model>

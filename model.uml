@@ -42,9 +42,15 @@
   <packagedElement xmi:type="uml:UseCase" xmi:id="_ub3SQJr8EeaRx6PHREtA_g" name="Envoyer un message">
     <extend xmi:id="_Gya1UJscEeaBB5SLXX35kA" extendedCase="_DCOSQJr9EeaRx6PHREtA_g"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_DCOSQJr9EeaRx6PHREtA_g" name="Consulter ses messages"/>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_H1YF8JsCEeaRx6PHREtA_g" name="Consulter ses compte"/>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_VyeS8JsCEeaRx6PHREtA_g" name="Consulter ses factures"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_DCOSQJr9EeaRx6PHREtA_g" name="Consulter ses messages">
+    <include xmi:id="_dvibcJuXEeaKN_lcrmG_cQ" addition="_r55MIJr5EeaRx6PHREtA_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_H1YF8JsCEeaRx6PHREtA_g" name="Consulter ses compte">
+    <include xmi:id="_UFy6AJuXEeaKN_lcrmG_cQ" addition="_r55MIJr5EeaRx6PHREtA_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_VyeS8JsCEeaRx6PHREtA_g" name="Consulter ses factures">
+    <include xmi:id="_ZjvwcJuXEeaKN_lcrmG_cQ" addition="_r55MIJr5EeaRx6PHREtA_g"/>
+  </packagedElement>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_fv6zgJsCEeaRx6PHREtA_g" name="Payer une facture">
     <extend xmi:id="_9NbaYJsCEeaRx6PHREtA_g" extendedCase="_VyeS8JsCEeaRx6PHREtA_g"/>
   </packagedElement>
@@ -54,7 +60,9 @@
   <packagedElement xmi:type="uml:UseCase" xmi:id="_pAuQgJsCEeaRx6PHREtA_g" name="Supprimer une facture">
     <extend xmi:id="__FjZoJsCEeaRx6PHREtA_g" extendedCase="_VyeS8JsCEeaRx6PHREtA_g"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_3EOngJsCEeaRx6PHREtA_g" name="Effectuer un virement"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_3EOngJsCEeaRx6PHREtA_g" name="Effectuer un virement">
+    <include xmi:id="_YpZBAJuXEeaKN_lcrmG_cQ" addition="_r55MIJr5EeaRx6PHREtA_g"/>
+  </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_DGgtoJsDEeaRx6PHREtA_g" memberEnd="_DGhUsJsDEeaRx6PHREtA_g _DGhUsZsDEeaRx6PHREtA_g">
     <ownedEnd xmi:id="_DGhUsJsDEeaRx6PHREtA_g" type="_m6VWIJreEeaRx6PHREtA_g" association="_DGgtoJsDEeaRx6PHREtA_g"/>
     <ownedEnd xmi:id="_DGhUsZsDEeaRx6PHREtA_g" type="_VyeS8JsCEeaRx6PHREtA_g" association="_DGgtoJsDEeaRx6PHREtA_g"/>
@@ -73,10 +81,8 @@
   <packagedElement xmi:type="uml:UseCase" xmi:id="_zmECEJsDEeaRx6PHREtA_g" name="Voir les transactions post-datées">
     <extend xmi:id="_-wpOsJsEEeaRx6PHREtA_g" extendedCase="_H1YF8JsCEeaRx6PHREtA_g"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_NpP3IJsEEeaRx6PHREtA_g" name="Créer son compte"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_QKUFsJsEEeaRx6PHREtA_g" memberEnd="_QKUFsZsEEeaRx6PHREtA_g _QKUswJsEEeaRx6PHREtA_g">
-    <ownedEnd xmi:id="_QKUFsZsEEeaRx6PHREtA_g" type="_NkI2AJr2EeaRx6PHREtA_g" association="_QKUFsJsEEeaRx6PHREtA_g"/>
-    <ownedEnd xmi:id="_QKUswJsEEeaRx6PHREtA_g" type="_NpP3IJsEEeaRx6PHREtA_g" association="_QKUFsJsEEeaRx6PHREtA_g"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_NpP3IJsEEeaRx6PHREtA_g" name="Créer un compte">
+    <include xmi:id="_ktZlcJuXEeaKN_lcrmG_cQ" addition="_r55MIJr5EeaRx6PHREtA_g"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_Q6wrMJsEEeaRx6PHREtA_g" memberEnd="_Q6wrMZsEEeaRx6PHREtA_g _Q6zHcJsEEeaRx6PHREtA_g">
     <ownedEnd xmi:id="_Q6wrMZsEEeaRx6PHREtA_g" type="_MXdu4JrzEeaRx6PHREtA_g" association="_Q6wrMJsEEeaRx6PHREtA_g"/>
@@ -85,7 +91,9 @@
   <packagedElement xmi:type="uml:UseCase" xmi:id="_iIMNQJsUEeaBB5SLXX35kA" name="Créer une facture">
     <extend xmi:id="_mBWQIJsUEeaBB5SLXX35kA" extendedCase="_VyeS8JsCEeaRx6PHREtA_g"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_cvOIAJsVEeaBB5SLXX35kA" name="Faire une demande de service"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_cvOIAJsVEeaBB5SLXX35kA" name="Faire une demande de service">
+    <include xmi:id="_QTaNgJuXEeaKN_lcrmG_cQ" name="Use" addition="_r55MIJr5EeaRx6PHREtA_g"/>
+  </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_kLdIsJsYEeaBB5SLXX35kA" memberEnd="_kLdvwJsYEeaBB5SLXX35kA _kLe94JsYEeaBB5SLXX35kA">
     <ownedEnd xmi:id="_kLdvwJsYEeaBB5SLXX35kA" type="_m6VWIJreEeaRx6PHREtA_g" association="_kLdIsJsYEeaBB5SLXX35kA"/>
     <ownedEnd xmi:id="_kLe94JsYEeaBB5SLXX35kA" type="_cvOIAJsVEeaBB5SLXX35kA" association="_kLdIsJsYEeaBB5SLXX35kA"/>
@@ -99,11 +107,13 @@
     <ownedEnd xmi:id="_1JezQZscEeaBB5SLXX35kA" type="_nOSgAJr2EeaRx6PHREtA_g" association="_1JezQJscEeaBB5SLXX35kA"/>
     <ownedEnd xmi:id="_1JezQpscEeaBB5SLXX35kA" type="_k8ve4JscEeaBB5SLXX35kA" association="_1JezQJscEeaBB5SLXX35kA"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_391KMJscEeaBB5SLXX35kA" name="Consulter les informations générales"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_391KMJscEeaBB5SLXX35kA" name="Consulter les informations générales">
+    <extend xmi:id="_6eovEJuVEeaKN_lcrmG_cQ" extendedCase="_k8ve4JscEeaBB5SLXX35kA"/>
+  </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_C1OwkJsoEeaBB5SLXX35kA" name="Usager"/>
   <packagedElement xmi:type="uml:Class" xmi:id="_f7lbsJsoEeaBB5SLXX35kA" name="Compte"/>
   <packagedElement xmi:type="uml:Association" xmi:id="_MxH8gJspEeaBB5SLXX35kA" name="PossèdeCompte" memberEnd="_MxH8gZspEeaBB5SLXX35kA _MxH8hJspEeaBB5SLXX35kA" navigableOwnedEnd="_MxH8hJspEeaBB5SLXX35kA">
-    <ownedEnd xmi:id="_MxH8gZspEeaBB5SLXX35kA" name="usagers" type="_C1OwkJsoEeaBB5SLXX35kA" association="_MxH8gJspEeaBB5SLXX35kA">
+    <ownedEnd xmi:id="_MxH8gZspEeaBB5SLXX35kA" name="client" type="_gZgnAJuaEeaKN_lcrmG_cQ" association="_MxH8gJspEeaBB5SLXX35kA">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MxH8gpspEeaBB5SLXX35kA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MxH8g5spEeaBB5SLXX35kA" value="1"/>
     </ownedEnd>
@@ -118,7 +128,7 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6hj_UJspEeaBB5SLXX35kA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6hj_UZspEeaBB5SLXX35kA" value="*"/>
     </ownedEnd>
-    <ownedEnd xmi:id="_6hkmYJspEeaBB5SLXX35kA" name="comptes" type="_f7lbsJsoEeaBB5SLXX35kA" association="_6hg8AJspEeaBB5SLXX35kA">
+    <ownedEnd xmi:id="_6hkmYJspEeaBB5SLXX35kA" name="compte" type="_f7lbsJsoEeaBB5SLXX35kA" association="_6hg8AJspEeaBB5SLXX35kA">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6hl0gJspEeaBB5SLXX35kA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6hl0gZspEeaBB5SLXX35kA" value="1"/>
     </ownedEnd>
@@ -166,5 +176,63 @@
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_ydWswJszEeaBB5SLXX35kA" name="Simulateur">
     <generalization xmi:id="_1ELlEJszEeaBB5SLXX35kA" general="_px3jUJszEeaBB5SLXX35kA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_W7Hr4JuYEeaKN_lcrmG_cQ" name="S'inscrire en tant que membre"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_al5UgJuYEeaKN_lcrmG_cQ" memberEnd="_al57kJuYEeaKN_lcrmG_cQ _al57kZuYEeaKN_lcrmG_cQ">
+    <ownedEnd xmi:id="_al57kJuYEeaKN_lcrmG_cQ" type="_NkI2AJr2EeaRx6PHREtA_g" association="_al5UgJuYEeaKN_lcrmG_cQ"/>
+    <ownedEnd xmi:id="_al57kZuYEeaKN_lcrmG_cQ" type="_W7Hr4JuYEeaKN_lcrmG_cQ" association="_al5UgJuYEeaKN_lcrmG_cQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_gZgnAJuaEeaKN_lcrmG_cQ" name="Client">
+    <generalization xmi:id="_lndSkJuaEeaKN_lcrmG_cQ" general="_C1OwkJsoEeaBB5SLXX35kA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_6MxJsJuaEeaKN_lcrmG_cQ" name="Conseille" memberEnd="_6MxJsZuaEeaKN_lcrmG_cQ _6MxJtJuaEeaKN_lcrmG_cQ" navigableOwnedEnd="_6MxJtJuaEeaKN_lcrmG_cQ">
+    <ownedEnd xmi:id="_6MxJsZuaEeaKN_lcrmG_cQ" name="gestionnaire" type="_wWnKEJswEeaBB5SLXX35kA" association="_6MxJsJuaEeaKN_lcrmG_cQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6MxJspuaEeaKN_lcrmG_cQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6MxJs5uaEeaKN_lcrmG_cQ" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_6MxJtJuaEeaKN_lcrmG_cQ" name="clients" type="_gZgnAJuaEeaKN_lcrmG_cQ" association="_6MxJsJuaEeaKN_lcrmG_cQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6MxJtZuaEeaKN_lcrmG_cQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6MxJtpuaEeaKN_lcrmG_cQ" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ONLkAJubEeaKN_lcrmG_cQ" name="Produit Financier"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_PeCu8JubEeaKN_lcrmG_cQ" name="Chéquier">
+    <generalization xmi:id="_WPf0oJubEeaKN_lcrmG_cQ" general="_ONLkAJubEeaKN_lcrmG_cQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_QsoB8JubEeaKN_lcrmG_cQ" name="Marge de crédit">
+    <generalization xmi:id="_V4hfEJubEeaKN_lcrmG_cQ" general="_ONLkAJubEeaKN_lcrmG_cQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_UD7U8JubEeaKN_lcrmG_cQ" name="Forfait Bancaire">
+    <generalization xmi:id="_VhBlEJubEeaKN_lcrmG_cQ" general="_ONLkAJubEeaKN_lcrmG_cQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_nR0GIJubEeaKN_lcrmG_cQ" name="Modifie" memberEnd="_nR0GIZubEeaKN_lcrmG_cQ _nR0GJJubEeaKN_lcrmG_cQ" navigableOwnedEnd="_nR0GJJubEeaKN_lcrmG_cQ">
+    <ownedEnd xmi:id="_nR0GIZubEeaKN_lcrmG_cQ" name="client" type="_gZgnAJuaEeaKN_lcrmG_cQ" association="_nR0GIJubEeaKN_lcrmG_cQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nR0GIpubEeaKN_lcrmG_cQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nR0GI5ubEeaKN_lcrmG_cQ" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_nR0GJJubEeaKN_lcrmG_cQ" name="factures" type="_PTvYUJsrEeaBB5SLXX35kA" association="_nR0GIJubEeaKN_lcrmG_cQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nR0GJZubEeaKN_lcrmG_cQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nR0GJpubEeaKN_lcrmG_cQ" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_yKJhoJubEeaKN_lcrmG_cQ" name="Demande" memberEnd="_yKJhoZubEeaKN_lcrmG_cQ _yKJhpJubEeaKN_lcrmG_cQ" navigableOwnedEnd="_yKJhpJubEeaKN_lcrmG_cQ">
+    <ownedEnd xmi:id="_yKJhoZubEeaKN_lcrmG_cQ" name="clients" type="_gZgnAJuaEeaKN_lcrmG_cQ" association="_yKJhoJubEeaKN_lcrmG_cQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yKJhopubEeaKN_lcrmG_cQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yKJho5ubEeaKN_lcrmG_cQ" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_yKJhpJubEeaKN_lcrmG_cQ" name="produit" type="_ONLkAJubEeaKN_lcrmG_cQ" association="_yKJhoJubEeaKN_lcrmG_cQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yKJhpZubEeaKN_lcrmG_cQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yKJhppubEeaKN_lcrmG_cQ" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HDWlIJucEeaKN_lcrmG_cQ" name="Utilise" memberEnd="_HDXMMJucEeaKN_lcrmG_cQ _HDXMM5ucEeaKN_lcrmG_cQ" navigableOwnedEnd="_HDXMMJucEeaKN_lcrmG_cQ _HDXMM5ucEeaKN_lcrmG_cQ">
+    <ownedEnd xmi:id="_HDXMMJucEeaKN_lcrmG_cQ" name="usagers" type="_C1OwkJsoEeaBB5SLXX35kA" association="_HDWlIJucEeaKN_lcrmG_cQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HDXMMZucEeaKN_lcrmG_cQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HDXMMpucEeaKN_lcrmG_cQ" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_HDXMM5ucEeaKN_lcrmG_cQ" name="outils" type="_px3jUJszEeaBB5SLXX35kA" association="_HDWlIJucEeaKN_lcrmG_cQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HDXMNJucEeaKN_lcrmG_cQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HDXMNZucEeaKN_lcrmG_cQ" value="*"/>
+    </ownedEnd>
   </packagedElement>
 </uml:Model>
